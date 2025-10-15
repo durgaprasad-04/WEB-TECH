@@ -1,0 +1,1 @@
+This repository contains various files I've created as part of my hands-on learning experience. These files primarily consist of early exercises and challenges focusing on fundamental web technologies like HTML, CSS, and JavaScript.
