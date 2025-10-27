@@ -1,0 +1,52 @@
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f0dddd;
+      margin: 20px;
+    }
+
+    table {
+        background-color: lightcyan;
+      border-collapse: collapse;
+    }
+
+
+    h3 {
+      color: rgb(80, 29, 233);
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(0, 23, 139);
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #ff6600;
+    }
+
+    hr {
+      border: 1px solid #000;
+      margin: 15px 0;
+    }
+
+    dt {
+      color: rgb(20, 14, 188);
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    dd {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    ul, ol {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
