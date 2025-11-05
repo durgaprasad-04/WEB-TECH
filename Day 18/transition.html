@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 600px;
+        }
+        .img-box{
+            height: 350px;
+            width: 400px;
+            background-color:aqua;
+            overflow: hidden;
+            box-shadow: 0 5px 10px black;
+            border-radius: 10px;
+        }
+        img{
+            width: 100%;
+            height:100%;
+            transition: transform 1.5s linear;
+            
+        }
+        img:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="img-box">
+        <img height="350px" width="400px" src="https://media.crictracker.com/media/attachments/1675235320638_Chris-Gayle.jpeg" alt="">
+    </div>
+    <div class="img-box">
+        <img height="350px" width="400px"src="https://wallpapers.com/images/hd/ab-de-villiers-rcb-run-scorer-pp1ibfe1p037atcn.jpg" alt="">
+    </div>
+    <div class="img-box">
+        <img height="350px" width="400px"src="https://assets.khelnow.com/news/uploads/2025/06/Virat-Kohli-poses-with-IPL-2025-trophy.jpg" alt="">
+    </div>
+</body>
+</html>
