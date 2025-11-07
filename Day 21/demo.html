@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display :flex;
+           justify-content: space-between;
+            margin-left: 20px;
+            margin-top: 200px;
+            justify-content:space-evenly ;
+            perspective: 1000px;
+        }
+        .bike{
+            box-shadow: 0 5px 10px black;
+           text-align: center;
+        }
+         .car{
+            border: 2px solid rgb(25, 23, 23);
+            box-shadow: 0 5px 10px black;
+           text-align: center;
+           
+        }
+         .auto{
+            border: 1px solid black;
+            box-shadow: 0 5px 10px black;
+           text-align: center;
+        }
+        .jet{
+            border: 1px solid black;
+            box-shadow: 0 5px 10px black;
+           text-align: center;
+        }
+        button{
+            height: 30px;
+            width: 150px;
+            margin: 5px;
+            background-color: black;
+            color: aliceblue;
+        }
+         .bike:hover{
+           transform: skew(10deg,5deg) rotate(360deg);
+           transition: transform 1.5s ease-in-out;
+        }
+          .car:hover{
+            transform: scale(1.5);
+        }
+          .auto:hover{
+             transform:translate(100px,100px);
+        }
+        .jet:hover {
+            transform: rotate3d(1, 1, 0, 360deg);
+            transition: transform 1.5s ease-in-out;
+        }
+
+             
+    
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bike">
+            <img height="300px" width="300px"src="https://tse3.mm.bing.net/th/id/OIP.AnyYz3y49pvyReeBt4sbugHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt=""><br><br>
+            <input type="text" placeholder="Enter KM"><br><br>
+            <button onClick="calculateFare(this)">Book Now</button>
+        </div>
+        <div class="car">
+            <img height="300px" width="300px"src="https://www.drive.co.uk/wp-content/uploads/2014/02/5_Latest-McLaren_650S_Coupe.jpg" alt=""><br><br>
+            <input type="text" placeholder="Enter KM"><br><br>
+            <button onClick="calculateFare(this)">Book Now</button>
+        </div>
+        <div class="auto">
+           <img height="300px" width="300px" src="https://media.istockphoto.com/id/1414019690/photo/auto-rickshaw-bajaj-tuktuk-3d-rendering-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=fgk95DFUcELlBjCODDSg8mSLRCgMgUFOCLaMM1SUl4s=" alt=""><br><br>
+           <input type="text" placeholder="Enter KM"><br><br>
+           <button onClick="calculateFare(this)">Book Now</button>
+        </div>
+          <div class="jet">
+           <img height="300px" width="300px" src="https://tse1.mm.bing.net/th/id/OIP.SM_4WrtGjmsJ4BEwClzBfQHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt=""><br><br>
+           <input type="text" placeholder="Enter KM"><br><br>
+           <button onClick="calculateFare(this)">Book Now</button>
+        </div>
+    </div>
+    <script>
+       const RATE_PER_KM = 15;
+
+    function calculateFare(button) {
+      // find the input inside the same card (safer than previousElementSibling)
+      const card = button.parentElement;
+      const input = card.querySelector('input[type="text"]');
+
+      if (!input) {
+        alert('Input not found.');
+        return;
+      }
+
+      const raw = input.value.trim();
+      const km = parseFloat(raw);
+
+      if (raw === '' || isNaN(km) || km < 0) {
+        alert('Please enter a valid positive number of kilometers.');
+        return;
+      }
+
+      const fare = km * RATE_PER_KM;
+
+      // show alert (you can change to any message)
+      alert(`Your total fare is Rs. ${fare}`);
+    }
+    </script>
+</body>
+</html>
