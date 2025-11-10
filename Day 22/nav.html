@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;padding: 0;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightgray;
+            height: 75px;
+        }
+        .menu-icon{
+            display: none;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: black;
+            font-size: bold;
+        }
+        @media (max-width:600px){
+            .menu-icon{
+                display: block;
+                border: 2px solid black;
+            }
+            .nav-links{
+                display: flex;
+                gap: 20px;
+            }
+        }
+        .nav-links a:hover{
+            color: red;
+            text-decoration: underline double;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img height="70px" src="https://png.pngtree.com/background/20230519/original/pngtree-cute-pug-dog-wallpapers-picture-image_2665928.jpg" alt="">
+        </div>
+        <div class="nav-links">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">SERVICES</a>
+            <a href="">CONTACT</a>
+        </div>
+        <div class="menu-icon">&#9776</div>
+    </nav>
+</body>
+</html>
