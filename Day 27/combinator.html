@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [target]{
+            color:green;
+        }
+        div h1{
+            color: red;
+        }
+        div >h1{
+            color: orange;
+        }
+        div +h1{
+            background-color: black;
+        }
+        h1:first-child{
+            background-color: aqua;
+        }
+        h1:last-child{
+            background-color: brown;
+        }
+        h1::after{
+            content: "Dp";
+        }
+        h1::before{
+            content:"Oh"
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>hello</h1>
+        <h1>hii</h1>
+        <span>
+            <h1>bye</h1>
+        </span>
+    </div>
+</body>
+</html>
