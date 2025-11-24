@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let totalAmount=1000
+        let finalAmount;
+        let today= new Date().getDay();
+
+        switch(today){
+            case 1:
+            case  2:
+            case 3: 
+            case 4: 
+            case 5: 
+            finalAmount=totalAmount-(totalAmount*0.10)
+            console.log('Discount applied(Weekdays)10%');
+            break
+
+            case 0:
+            case 6: 
+              finalAmount=totalAmount
+            console.log('No Discount on weekends');
+            break
+        }
+        console.log(`Original Amount:${totalAmount}`);
+        console.log(`FinalAmount: ${finalAmount}`);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
