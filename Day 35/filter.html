@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let products =[1000,2500,100, 35000]
+        // console.log("Original data",products)
+        // let filteredData= products.filter((x)=>{
+        //     return x>4000
+        // })
+        // console.log("Filtered Data",filteredData)
+
+
+
+
+
+        let list=[2500,3500,4500,2000,10000]
+        console.log("Original list",list)
+        let filteredData= list.filter((x)=>{
+            return x>5000
+        })
+        console.log("Filteered",filteredData)
+
+
+
+        let getTotal= filteredData.map((x)=>{
+            return x+x*0.18
+        })
+        console.log("GST",getTotal)
+
+        let total=getTotal.reduce((acc,value)=>{
+            return acc+value
+        },0)
+        console.log("total amount",total)
+    </script>
+</body>
+</html>

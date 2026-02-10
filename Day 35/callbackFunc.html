@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function greet(){
+            console.log("Welcome to home party")
+        }
+        function hof(callback){
+            console.log("This is hof")
+            callback()
+        }
+        hof(greet)
+
+</script>
+
+
+        // function hello(){
+        //     console.log("namaste")
+        // }
+        // function hof(callback){
+        //     console.log("This is hof")
+        // }
+        // hof(hello)
+
+        function reels(){
+            console.log("Watching reels")
+        }
+        function instagram(name,callback){
+            if(name==='Guru'){
+            callback()
+        } else{
+            console.log("Invalid ")
+        }
+    }
+    instagram("Guru",reels)
+
+
+
+    </script>
+</body>
+</html>

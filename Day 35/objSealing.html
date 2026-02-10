@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user={
+            name:"Dp",
+            age:22,
+            city:"Mangalore",
+            gender:"Male"
+        }
+     Object.seal(user)
+        user.gender="Female"
+        delete user.city;
+        user.name="Prasad"
+        console.log(user)
+        console.log(Object.isSealed(user))
+
+
+        Object.freeze(user)
+        user.city="Karntaka"
+        console.log(user)
+        console.log(Object.isFrozen(user))
+
+    </script>
+    
+</body>
+</html>
